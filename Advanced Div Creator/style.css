@@ -1,0 +1,45 @@
+
+.row{
+    background-image: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("image/back.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#num,#row{
+    background-color: rgba(179, 169, 169, 0.5);
+    color: white;
+}
+.shape{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.418);
+    height: 170px;
+    display: inline-block;
+    margin-bottom: 1%;
+    cursor: pointer;
+    border-radius: 8px;
+  transition: all 1s ease;
+}
+.shape::after{
+    content:"Click me Baby";
+    transform: scale(0);
+    position: absolute;
+    width: 100%;
+    height: 100%;;
+    text-align: center;
+    line-height: 170px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 27px;
+    transition: all 0.3s linear;
+
+}
+.shape:hover::after{
+    transform: scale(1)
+}
+.remove{
+   transform: scale(0) rotate(360deg);
+}
+
+
